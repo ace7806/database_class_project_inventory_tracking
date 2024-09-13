@@ -1,0 +1,213 @@
+{
+	"info": {
+		"_postman_id": "0376eeb8-c68b-467c-963f-8dd5cd7a2524",
+		"name": "Local Statistics",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31218181",
+		"_collection_link": "https://los-cangris.postman.co/workspace/0252fbe2-b9ed-46dd-8845-94340e3723d0/collection/31218181-0376eeb8-c68b-467c-963f-8dd5cd7a2524?action=share&source=collection_link&creator=31218181"
+	},
+	"item": [
+		{
+			"name": "Top 5 most expensive racks in the warehouse",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"User_id\": 5}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}/warehouse/6/rack/expensive",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"warehouse",
+						"6",
+						"rack",
+						"expensive"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bottom 3 part's type/material in the warehouse",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"User_id\": 5}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}/warehouse/6/rack/material",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"warehouse",
+						"6",
+						"rack",
+						"material"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Top 5 Racks with quantity under the 25% capacity threshold",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"User_id\": 5}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}/warehouse/6/rack/lowstock",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"warehouse",
+						"6",
+						"rack",
+						"lowstock"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Warehouse's year profit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"User_id\": 5}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}/warehouse/6/profit",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"warehouse",
+						"6",
+						"profit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Top 3 suppliers that supplied to the warehouse",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"User_id\": 5}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}/warehouse/6/transaction/suppliers",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"warehouse",
+						"6",
+						"transaction",
+						"suppliers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Top 3 days with the smallest incoming transactions' cost",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"User_id\": 5}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}/warehouse/6/transaction/leastcost",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"warehouse",
+						"6",
+						"transaction",
+						"leastcost"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Top 3 Users that recieve the most exchanges",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"User_id\": 5}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}/warehouse/6/user/ecievesmost",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"warehouse",
+						"6",
+						"user",
+						"ecievesmost"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

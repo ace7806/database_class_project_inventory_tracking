@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "40673923-082d-4387-a499-ab68ef85e294",
+		"name": "Global Statistics",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31218181",
+		"_collection_link": "https://los-cangris.postman.co/workspace/0252fbe2-b9ed-46dd-8845-94340e3723d0/collection/31218181-40673923-082d-4387-a499-ab68ef85e294?action=share&source=collection_link&creator=31218181"
+	},
+	"item": [
+		{
+			"name": "Top 10 Warehouses with the most racks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/most/rack",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"most",
+						"rack"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Top 5 Warehouses with the most incoming transactions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/most/incoming",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"most",
+						"incoming"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Top 5 Warehouses that deliver the most exchanges",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/most/deliver",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"most",
+						"deliver"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Top 3 Users that made the most transactions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/most/transactions",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"most",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Top 3 Warehouses with the least amount of outgoing transactions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/least/outgoing",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"least",
+						"outgoing"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Top 3 Warehouses' cities with the most amount of transactions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/most/city",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"most",
+						"city"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

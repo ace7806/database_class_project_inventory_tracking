@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "76b3b2eb-f462-4219-8407-e18ba1ccef43",
+		"name": "User",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31218181",
+		"_collection_link": "https://los-cangris.postman.co/workspace/0252fbe2-b9ed-46dd-8845-94340e3723d0/collection/31218181-76b3b2eb-f462-4219-8407-e18ba1ccef43?action=share&source=collection_link&creator=31218181"
+	},
+	"item": [
+		{
+			"name": "get all users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/user",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/user/1",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fname\": \"Jeremy\",\r\n    \"lname\": \"Caban\",\r\n    \"uemail\": \"db@test\",\r\n    \"uphone\":\"787-0DB-TEST\",\r\n    \"wid\": 150032\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}/user",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/user/1",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/user/1",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

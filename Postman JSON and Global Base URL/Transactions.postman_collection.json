@@ -1,0 +1,269 @@
+{
+	"info": {
+		"_postman_id": "307a847f-078f-4ca5-b467-c19d67724b92",
+		"name": "Transactions",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31218181",
+		"_collection_link": "https://los-cangris.postman.co/workspace/0252fbe2-b9ed-46dd-8845-94340e3723d0/collection/31218181-307a847f-078f-4ca5-b467-c19d67724b92?action=share&source=collection_link&creator=31218181"
+	},
+	"item": [
+		{
+			"name": "CREATE-incoming",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tquantity\":1,\r\n    \"ttotal\":2,\r\n    \"pid\":8,\r\n    \"sid\":13,\r\n    \"rid\":15,\r\n    \"uid\":10,\r\n    \"wid\":7\r\n}"
+				},
+				"url": {
+					"raw": "{{baseurl}}/incoming",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"incoming"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE incoming",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/incoming/1",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"incoming",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update incoming transaction",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tquantity\":5,\r\n    \"ttotal\":1000,\r\n    \"pid\":8,\r\n    \"sid\":13,\r\n    \"rid\":15,\r\n    \"uid\":10,\r\n    \"wid\":7\r\n}"
+				},
+				"url": {
+					"raw": "{{baseurl}}/incoming/1",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"incoming",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update outgoing request",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tquantity\":5,\r\n    \"ttotal\":1000,\r\n    \"pid\":8,\r\n    \"sid\":13,\r\n    \"rid\":15,\r\n    \"uid\":10,\r\n    \"wid\":1,\r\n    \"obuyer\":\"jay cortez\"\r\n}"
+				},
+				"url": {
+					"raw": "{{baseurl}}/outgoing/2",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"outgoing",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE outgoing",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tquantity\":1,\r\n    \"obuyer\":\"Test\",\r\n    \"ttotal\":2,\r\n    \"pid\":8,\r\n    \"sid\":13,\r\n    \"rid\":15,\r\n    \"uid\":10,\r\n    \"wid\":7\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}/outgoing",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"outgoing"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "READ outgoing",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/outgoing",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"outgoing"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "READ incoming",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/incoming",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"incoming"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "READ incoming by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/incoming/1",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"incoming",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "READ outgoing by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/outgoing/1",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"outgoing",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "READ exchange",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/exchange",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"exchange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create exchange",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tquantity\":10,\r\n    \"ttotal\":10,\r\n    \"pid\":10,\r\n    \"sid\":10,\r\n    \"outgoing_rid\":10,\r\n    \"incoming_rid\":10,\r\n    \"outgoing_uid\":10,\r\n    \"incoming_uid\":10,\r\n    \"outgoing_wid\":10,\r\n    \"incoming_wid\":10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}/exchange",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"exchange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "READ exchange by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/exchange/1",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"exchange",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

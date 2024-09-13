@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "4b10184a-a363-452f-8180-29610432d0ae",
+		"name": "Racks",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31218181",
+		"_collection_link": "https://los-cangris.postman.co/workspace/0252fbe2-b9ed-46dd-8845-94340e3723d0/collection/31218181-4b10184a-a363-452f-8180-29610432d0ae?action=share&source=collection_link&creator=31218181"
+	},
+	"item": [
+		{
+			"name": "get all racks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/rack",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"rack"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE Rack",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"capacity\":100,\r\n    \"wid\":7,\r\n    \"quantity\":0,\r\n    \"pid\":8\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}/rack",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"rack"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/rack/1",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"rack",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE rack",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/rack/1",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"rack",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/user/1",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

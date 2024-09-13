@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "3ed5a814-e95c-4b1a-850c-5f9e2474a308",
+		"name": "Warehouse",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31218181",
+		"_collection_link": "https://los-cangris.postman.co/workspace/0252fbe2-b9ed-46dd-8845-94340e3723d0/collection/31218181-3ed5a814-e95c-4b1a-850c-5f9e2474a308?action=share&source=collection_link&creator=31218181"
+	},
+	"item": [
+		{
+			"name": "DELETE warehouses",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/warehouse/10",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"warehouse",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE Warehouse",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"wname\":\"warehouse2\",\r\n    \"wcity\":\"bayamon\",\r\n    \"wemail\":\"lol@test\",\r\n    \"wphone\":\"787-112-2211\",\r\n    \"budget\":500\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}/warehouse/1",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"warehouse",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE Warehouse",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"wname\":\"Transaction_Warehouse\",\r\n    \"wcity\":\"Aguada\",\r\n    \"wemail\":\"db@test\",\r\n    \"wphone\":\"787-0DB-TEST\",\r\n    \"budget\":500\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseurl}}/warehouse",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"warehouse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "READ Warehouse",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/warehouse",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"warehouse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "READ Warehouse by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/warehouse/1",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"warehouse",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

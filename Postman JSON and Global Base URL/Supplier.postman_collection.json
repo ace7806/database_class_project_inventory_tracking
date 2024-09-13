@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "bc25f3f4-2895-4e4d-aa8a-b88fc560828b",
+		"name": "Supplier",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31218181",
+		"_collection_link": "https://los-cangris.postman.co/workspace/0252fbe2-b9ed-46dd-8845-94340e3723d0/collection/31165384-bc25f3f4-2895-4e4d-aa8a-b88fc560828b?action=share&source=collection_link&creator=31218181"
+	},
+	"item": [
+		{
+			"name": "READ_ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/supplier",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"supplier"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "READ_by_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/supplier/1",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"supplier",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sname\":\"Sebastian\",\r\n    \"scity\":\"Moca\",\r\n    \"sphone\":\"787-0DB-TEST\",\r\n    \"semail\":\"test@gmail.com\"\r\n}"
+				},
+				"url": {
+					"raw": "{{baseurl}}/supplier",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"supplier"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sname\": \"Sebastian-EDITED-AGAIN\",\r\n    \"scity\": \"Moca-EDITED\",\r\n    \"sphone\": \"787-0DB-TEST-EDITED\",\r\n    \"semail\":\"db@gmail.com\"\r\n}"
+				},
+				"url": {
+					"raw": "{{baseurl}}/supplier/1",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"supplier",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseurl}}/supplier/3",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"supplier",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "associate part with supplier",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"stock\":10,\r\n    \"pid\":8\r\n}"
+				},
+				"url": {
+					"raw": "{{baseurl}}/supplier/13/parts",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"supplier",
+						"13",
+						"parts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update supplier part stock",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}"
+				},
+				"url": {
+					"raw": "{{baseurl}}/supplier/2/parts",
+					"host": [
+						"{{baseurl}}"
+					],
+					"path": [
+						"supplier",
+						"2",
+						"parts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
